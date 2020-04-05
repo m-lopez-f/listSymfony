@@ -1,0 +1,10 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+heroes:
+  path: /heroes
+  methods: POST
+  controller: App\Controller\CreateHeroes::get
+list:
+  path: /
+  controller: App\Controller\ListHeroes::list

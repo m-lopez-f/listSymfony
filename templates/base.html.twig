@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            <button onclick="loadHeroes()">Listar personajes</button>
+            <table id="listHeroes">
+                <thead>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Mass</th>
+                <th>Height</th>
+                <th>Birth Year</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        {% endblock %}
+    </body>
+</html>
